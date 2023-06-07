@@ -1,0 +1,115 @@
+@import '../../../css_modules/vars.scss';
+@import '../../../css_modules/mixins.scss';
+
+$change-size-with: 968px;
+
+.cell {
+  background-color: #153d46;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #787878;;
+  text-align: center;
+  font-size: 32px;
+}
+
+.cell:hover {
+  cursor: default;
+  background-color: #e2e2e2;
+}
+
+.cell:active {
+  background-color: #77767c;
+}
+
+.cell__light {
+  background-color: #e5e5e5;
+}
+
+.cell__light:hover {
+  background-color: #6c727c;
+}
+
+.cell__easy {
+  @media (max-width: $dekstop-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.cell__medium {
+  width: 30px;
+  height: 30px;
+  font-size: 28px;
+  @media (max-width: $dekstop-width) {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+}
+
+.cell__hard {
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+
+  @media (max-width: $dekstop-width) {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+  }
+}
+
+.cell__opened {
+  background-color: #ffeccf;
+  user-select: none;
+}
+
+.cell__marked {
+  @include set-background('../../../../assets/images/wings.jpg');
+  background-attachment: local;
+}
+
+.cell__mine {
+  @include set-background('../../../../assets/images/titan.jpg');
+  background-attachment: local;
+  color: transparent;
+
+  transition: 0.2s linear;
+}
+
+.cell__mine-show {
+  filter: saturate(5)
+}
+
+.cell-1 {
+  color: #00a758;
+}
+
+.cell-2 {
+  color: #ec003f;
+}
+
+.cell-3 {
+  color: #65306d;
+}
+
+.cell-4 {
+  color: #003bbd;
+}
+
+.cell-5 {
+  color: #ff6395;
+}
+
+.cell-6 {
+  color: #b2ff57;
+}
+
+.cell-7 {
+  color: #00ffff;
+}
+
+.cell-8 {
+  color: #0c0600;
+}

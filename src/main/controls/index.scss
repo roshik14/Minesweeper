@@ -1,0 +1,55 @@
+@use '../../css_modules/mixins.scss';
+
+.controls {
+  color: #ffeccf;
+}
+
+.controls__light {
+  color: #000014;
+}
+
+.controls-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.controls-btn:hover {
+  cursor: pointer;
+}
+
+.controls-btn:active,
+.controls-btn__active {
+  background-color: #505556;
+}
+
+.controls-btn__active--light {
+  background-color: #e2e2e2;
+}
+
+.controls-btn__active:hover {
+  cursor: auto;
+  background-color: #505556;
+}
+
+.controls-input-container {
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+
+.controls-input-item {
+  margin-top: 15px;
+}
+
+.controls-input-description {
+  padding-top: 2px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.controls-input {
+  width: 40px;
+  height: 10px;
+}

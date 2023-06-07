@@ -1,0 +1,15 @@
+.message {
+  display: none;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fffaf2;
+}
+
+.message__light {
+  color: #000014;
+}
+
+.message__show {
+  display: block;
+}

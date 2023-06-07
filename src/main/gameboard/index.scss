@@ -1,0 +1,35 @@
+.board {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.board__disabled {
+  user-select: none;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.board__easy {
+  font-size: 20px;
+}
+
+.board__medium {
+  font-size: 15px;
+}
+
+.board__hard {
+  font-size: 12px;
+
+  @media (max-width: 570px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 6px;
+    font-weight: 600;
+  }
+}

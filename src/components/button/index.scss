@@ -1,0 +1,21 @@
+@use '../../css_modules/vars.scss';
+
+$bg-color: #202325;
+$bg-color-light: #c7c299;
+
+.button {
+  border: 1px solid;
+  border-radius: 5px;
+  transition: 0.2s linear;
+  padding: 3px 10px;
+  font-size: 14px;
+  background-color: $bg-color;
+  border-color: $bg-color;
+  color: #fff;
+}
+
+.button__light {
+  background-color: $bg-color-light;
+  border-color: $bg-color-light;
+  color: #000;
+}
